@@ -90,7 +90,7 @@ async def help_command(_, message):
                     ),
                     InlineKeyboardButton(
                         text="Repo 🛠",
-                        url="https://github.com/thehamkercat/WilliamButcherBot",
+                        url="https://t.me/idiveno",
                     )
                 ],
                 [
@@ -100,7 +100,7 @@ async def help_command(_, message):
                     ),
                     InlineKeyboardButton(
                         text="Support 👨",
-                        url="t.me/WBBSupport"
+                        url="t.me/idiveno"
                     )
                 ]
             ]
@@ -116,7 +116,7 @@ async def help_command(_, message):
                 ),
                 InlineKeyboardButton(
                     text="Repo 🛠",
-                    url="https://github.com/thehamkercat/WilliamButcherBot"
+                    url="https://t.me/idiveno"
                 )
             ],
             [
@@ -126,7 +126,7 @@ async def help_command(_, message):
                 ),
                 InlineKeyboardButton(
                     text="Support 👨",
-                    url="t.me/WBBSupport"
+                    url="t.me/idiveno"
                 )
             ],
             [
@@ -145,7 +145,7 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """Hello {first_name}! My name is {bot_name}!
-I'm a group management bot with some usefule features.
+I'm a group management bot with some usefull features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 
