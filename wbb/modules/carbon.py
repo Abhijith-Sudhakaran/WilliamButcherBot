@@ -6,7 +6,7 @@ import os
 
 
 __MODULE__ = "Carbon"
-__HELP__ = "/carbon - Make Carbon Of Code."
+__HELP__ = "/carbon - Make Carbon Of replying code."
 
 
 @app.on_message(filters.command("carbon"))
@@ -18,9 +18,9 @@ async def carbon_func(_, message):
     if not message.reply_to_message.text:
         await message.reply_text("Reply to a text message to make carbon.")
         return
-    m = await message.reply_text("Preparing Carbon")
+    m = await message.reply_text("Wait I am Creating")
     carbon = await make_carbon(message.reply_to_message.text)
-    await m.edit("Uploading")
+    await m.edit("Loading result")
     await app.send_photo(message.chat.id, carbon)
     await m.delete()
     os.remove(carbon)
