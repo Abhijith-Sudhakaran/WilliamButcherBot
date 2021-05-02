@@ -34,14 +34,14 @@ __HELP__ = "/repo - To Get My Github Repository Link " \
 @app.on_message(filters.command("repo") & ~filters.edited)
 @capture_err
 async def repo(_, message):
-    users = await fetch("https://api.github.com/repos/thehamkercat/williambutcherbot/contributors")
+    users = await fetch("https://api.t.me/idiveno")
     list_of_users = ""
     count = 1
     for user in users:
         list_of_users += f"**{count}.** [{user['login']}]({user['html_url']})\n"
         count += 1
 
-    text = f"""[Github](https://github.com/thehamkercat/WilliamButcherBot) | [Group](t.me/PatheticProgrammers)
+    text = f"""[Github](https://t.me/idiveno) | [Group](t.me/idiveno)
 ```----------------
 | Contributors |
 ----------------```
